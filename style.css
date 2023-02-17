@@ -1,0 +1,158 @@
+* {
+  margin: 0px;
+}
+.body {
+  width: 100%;
+  height: auto;
+}
+.head {
+  background-color: rgb(193, 193, 37);
+  width: 100%;
+  height: 170px;
+}
+.logo {
+  background-image: url(./images.png);
+  position: absolute;
+  top: 15px;
+}
+.nav {
+  display: flex;
+  position: absolute;
+  right: 70px;
+  top: 91px;
+  flex-direction: row;
+}
+.menu {
+  width: 100px;
+  text-align: center;
+  height: 51px;
+  border: 1px solid black;
+  color: white;
+  background-color: blue;
+  margin: 10px;
+  border-radius: 10px;
+}
+.middle {
+  width: 100%;
+  height: 800px;
+  background-color: lightblue;
+}
+.box {
+  width: 150px;
+  height: 70px;
+  border: 1px solid black;
+  margin: 5px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+}
+.b1 {
+  background-color: green;
+  animation-name: b1;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes b1 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+.b2 {
+  background-color: red;
+  animation-name: b2;
+  animation-duration: 5s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+@keyframes b2 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+.b3 {
+  background-color: green;
+  animation-name: b3;
+  animation-duration: 5s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+@keyframes b3 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+.b4 {
+  background-color: red;
+  animation-name: b4;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+@keyframes b4 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+.b5 {
+  background-color: green;
+  animation-name: b5;
+  animation-duration: 5s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes b5 {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(200px);
+  }
+}
+
+@media (min-width: 340px) and (max-width: 600px) {
+  .body {
+    width: 200%;
+    height: 100%;
+  }
+  img {
+    width: 100px;
+    height: 71px;
+  }
+  .nav {
+    display: flex;
+    position: absolute;
+    left: 233px;
+    width: 375px;
+    top: 3px;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .manu {
+    font-size: 13px;
+    width: 38px;
+    text-align: center;
+    height: 40px;
+    border: 1px solid black;
+    color: white;
+    background-color: blue;
+    margin: 10px;
+    border-radius: 10px;
+    top: 10p;
+    position: relative;
+    top: 54px;
+  }
+}
